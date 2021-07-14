@@ -10,7 +10,6 @@ const reviewSchema = new Schema ({
         max: 10,
         default: 10
     },
-    recommend: {type: Boolean},
     date: {
         type: Number,
         default: function () {

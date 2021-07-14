@@ -58,7 +58,9 @@
 		<option value="9">9</option>
 		<option value="10">10</option>
 	</select>
-	<input type="submit" value="Add Review" />
+	<button class="btn btn-primary" type="submit">
+		Add Review
+	  </button>
 </form>
 
 <% if (snowboard.reviews.length > 0) { %>
@@ -69,7 +71,6 @@
 			<th scope="col">Date</th>
 			<th scope="col">Description</th>
 			<th scope="col">Rating</th>
-			<th scope="col">Recommend</th>
 		  </tr>
 		</thead>
 	<tbody>
@@ -78,7 +79,6 @@
 			<td><%= review.date %></td>
 			<td><%= review.description %></td>
 			<td><%= review.rating %></td>
-			<td><%= review.recommend %></td>
 			<td><form
 				method="POST"
 				action="/reviews/<%= review._id %>?_method=PUT" method="POST">

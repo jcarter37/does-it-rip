@@ -2,6 +2,7 @@ body {
   padding: 50px;
   font-family: 'Syncopate', sans-serif;
   font: 20px;
+  text-shadow: 0 0 7px #8bd7f2, 0 0 7px #8bd7f2;
 }
 
 a {
@@ -13,7 +14,12 @@ a {
 }
 
 #mainNav {
+  background-color: #343738;
+}
+
+.btn btn-primary{
   background-color: #8bd7f2;
+  border-radius: 100px;
 }
 
 #browseBtn {
@@ -23,4 +29,10 @@ a {
 
 #page-top {
   padding: 12vmin;
+  background-image: url(https://wallpaperaccess.com/full/1221833.jpg);
+  background-size: cover;
+}
+
+.table table-striped table-hover {
+  color: white
 }
