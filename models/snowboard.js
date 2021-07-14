@@ -29,11 +29,12 @@ const snowboardSchema = new Schema ({
         type: Number,
         min: 2010,
         max: 2021,
-        required: true,
+        required: true
     },
     price: { 
-        type: String,
-        match: /[$][125.99-999.99]\d?/,
+        type: Number,
+        min: 125,
+        max: 999,
         required: true
     },
     size: {
