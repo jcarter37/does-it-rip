@@ -2,11 +2,17 @@ body {
   padding: 50px;
   font-family: 'Syncopate', sans-serif;
   font: 20px;
-  text-shadow: 0 0 7px #8bd7f2, 0 0 7px #8bd7f2;
+  text-shadow: 0 0 3px #8bd7f2, 0 0 3px #8bd7f2;
 }
 
 a {
   color: #00B7FF;
+  border-radius: 100px;
+}
+
+#browseBtn.btn.btn-primary {
+  background-color: #8bd7f2;
+  border-radius: 100px;
 }
 
 #mainContainer {
@@ -14,18 +20,14 @@ a {
 }
 
 #mainNav {
-  background-color: #343738;
+  background-color: #1f2020;
 }
 
-.btn btn-primary{
-  background-color: #8bd7f2;
-  border-radius: 100px;
+
+.btn-close:hover{
+  background-color: #e05555;
 }
 
-#browseBtn {
-  background-color: #8bd7f2;
-  border-radius: 100px; 
-}
 
 #page-top {
   padding: 12vmin;
