@@ -1,0 +1,67 @@
+<%- include('../partials/header') %>
+
+		<form id="new-form" action="/snowboards" method="POST" autocomplete="off">
+			
+			<table class="table table-striped table-hover">
+				<thead>
+				  <tr>
+					<th scope="col">Name</th>
+					<th scope="col">Release Year</th>
+				  </tr>
+				</thead>
+				<tbody>
+					<tr>
+					  <th scope="row">Name:</th>
+					  <td><input type="text" name="name"></td>
+					</tr>
+				  <tr>
+					<th scope="row">Release Year:</th>
+					<td><input type="number" name="releaseYear"></td>
+				  </tr>
+				  <tr>
+					<th scope="row">Price</th>
+					<td><input type="text" name="price"></td>
+				  </tr>
+				  <tr>
+					<th scope="row">Size:</th>
+					<td><input type="number" name="size"></td>
+				  </tr>
+				  <tr>
+					<th scope="row">Riding Style:</th>
+					<td><select name="type">
+						<option value="All Mountain">All Mountain</option>
+						<option value="Free Ride">Free Ride</option>
+						<option value="Park/Freestyle">Park/Freestyle</option>
+						<option value="Powder">Powder</option>
+					</select> </td>
+				  </tr>
+				  <tr>
+					<th scope="row">Shape:</th>
+					<td><select name="shape">
+						<option value="True Twin">True Twin</option>
+						<option value="Directional Twin">Directional Twin</option>
+						<option value="Directional">Directional</option>
+						<option value="Asymmetrical">Asymmetrical</option>
+					</select> </td>
+				  </tr>
+				  <tr>
+					<th scope="row">Flex:</th>
+					<td><select name="flex">
+						<option value="Soft">Soft</option>
+						<option value="Medium">Medium</option>
+						<option value="Stiff">Stiff</option>
+					</select></td>
+				  </tr>
+				  <tr>
+					<th scope="row">Ability Level:</th>
+					<td><select name="abilityLevel">
+						<option value="Beginner">Beginner</option>
+						<option value="Intermediate">Intermediate</option>
+						<option value="Advanced">Advanced</option>
+					</select></td>
+				  </tr>	
+				</tbody>
+			  </table>
+			  <button type="submit" class="btn btn-success">Add Board</button>
+		</form>
+        <%- include('../partials/footer') %>
