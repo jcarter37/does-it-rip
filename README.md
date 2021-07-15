@@ -13,7 +13,7 @@ Screenshots:
 
 
 Technologies Used:
-Javascript, CSS, Node, Express, MongoDB, Mongoose
+Javascript, Node, Express, MongoDB, Mongoose, CSS, Bootstrap
 
 
 Getting Started:
